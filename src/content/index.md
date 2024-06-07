@@ -7,7 +7,7 @@
 
 # Nature's Delight - Analog and Tailwind CSS!
 
-Jamstack (MPA-SSG) app for an fresh & organic fictional store styled with the power and beauty of Tailwind CSS. This app is built into a static site, and can be easily deployed to a CDN with excellent SEO.
+A simple landing page for an fresh & organic fictional store styled with the power and beauty of Tailwind CSS. This app is built into a static site, and can be easily deployed to a CDN with excellent SEO.
 
 Demo - https://natures-delight-analog-tailwindcss.netlify.app
 
