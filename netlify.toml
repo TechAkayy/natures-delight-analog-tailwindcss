@@ -1,6 +1,6 @@
 [build]
 command = "npm run build"
-publish = "dist/analog/public"
+publish = "dist/client"
 functions = "dist/analog"
 [[redirects]]
   from = "/*"
