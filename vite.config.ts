@@ -9,6 +9,7 @@ import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
+// import Vue from '@vitejs/plugin-vue'
 
 // import VueDevTools from 'vite-plugin-analog-devtools'
 
@@ -82,6 +83,10 @@ export default defineConfig(({ mode }) => ({
     }),
     // VueDevTools(),
     liveDesigner({
+      dirs: {
+        src: './src/app',
+      },
+      startupPage: './src/app/components/HeroSection.analog',
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
       devtoolsKey: 'devtoolsKey',
       tailwindcss: {

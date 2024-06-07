@@ -24,7 +24,7 @@
     "test": "ng test",
     "analog-devtools": "analog-devtools",
     "lint": "npm run lint:fix && npm run format",
-    "lint:fix": "eslint --fix --ext .analog,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts ./ --ignore-path .gitignore",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts ./ --ignore-path .gitignore",
     "format": "prettier --write \"**/*.{analog,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
   },
   "dependencies": {
@@ -48,6 +48,7 @@
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "vue": "^3.4.27",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
@@ -68,6 +69,7 @@
     "@tsconfig/node18": "^2.0.0",
     "@types/node": "^20.5.0",
     "@unocss/preset-icons": "^0.57.2",
+    "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.21.4",
     "eslint": "^8.39.0",

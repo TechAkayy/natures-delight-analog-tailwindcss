@@ -101,46 +101,46 @@ const pg_colors = {
     900: '#831843',
   },
   primary: {
-    50: '#fbf3ed',
-    100: '#fae2cd',
-    200: '#f8d1ad',
-    300: '#f3c18e',
-    400: '#edb06f',
-    500: '#e6a04f',
-    600: '#d39248',
-    700: '#bf8542',
-    800: '#ad783b',
-    900: '#9a6b35',
-    950: '#885f2f',
-    DEFAULT: '#e6a04f',
+    50: '#f7eeec',
+    100: '#f4d5ca',
+    200: '#eebca8',
+    300: '#e6a388',
+    400: '#dd8b69',
+    500: '#d2734a',
+    600: '#c55a2b',
+    700: '#b45227',
+    800: '#a44b24',
+    900: '#944420',
+    950: '#843c1d',
+    DEFAULT: '#753519',
   },
   secondary: {
-    50: '#f3f1ec',
-    100: '#e3dcc9',
-    200: '#d3c7a6',
-    300: '#c2b284',
-    400: '#b09e62',
-    500: '#9e8b41',
-    600: '#8d7c3a',
-    700: '#7d6e33',
-    800: '#6d602d',
-    900: '#5d5226',
-    950: '#5d5226',
-    DEFAULT: '#9e8b41',
+    50: '#f1ebeb',
+    100: '#e3c8c3',
+    200: '#d4a69d',
+    300: '#c38478',
+    400: '#b06355',
+    500: '#9b4233',
+    600: '#841c14',
+    700: '#791a13',
+    800: '#6e1711',
+    900: '#631510',
+    950: '#58130e',
+    DEFAULT: '#4e110c',
   },
   tertiary: {
-    50: '#fcf5f2',
-    100: '#fae8e0',
-    200: '#f7dbce',
-    300: '#f4cebc',
-    400: '#f0c1aa',
-    500: '#ecb499',
-    600: '#d3a189',
-    700: '#bb8e79',
-    800: '#a37c6a',
-    900: '#8c6a5b',
-    950: '#8c6a5b',
-    DEFAULT: '#ecb499',
+    50: '#fdf2ee',
+    100: '#fde2d5',
+    200: '#fcd3bd',
+    300: '#fac3a5',
+    400: '#f7b48d',
+    500: '#f3a476',
+    600: '#ee955f',
+    700: '#da8857',
+    800: '#c67c4f',
+    900: '#b37047',
+    950: '#9f6440',
+    DEFAULT: '#8d5838',
   },
   neutral: {
     50: '#ebebeb',
@@ -210,31 +210,32 @@ const pg_colors = {
     800: '#0271ae',
     900: '#02669d',
     950: '#015b8c',
+    975: '#015989',
     DEFAULT: '#5098d8',
   },
 }
 
 const pg_fonts = {
-  sans: ["'Proza Libre', sans-serif"],
-  serif: ["'Sora', sans-serif"],
+  sans: ["'Fira Sans', sans-serif"],
+  serif: ["'Kalam', sans-serif"],
 }
 
 const pg_font_urls = [
-  'https://fonts.googleapis.com/css?family=Proza+Libre:400,500,600,700,800|Sora:100,200,300,400,500,600,700,800&display=swap',
+  'https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900|Kalam:300,400,700&display=swap',
 ]
 
 const pg_backgrounds = {
   'design-image':
-    "url('https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE1OHx8d2FsbHBhcGVyfGVufDB8fHx8MTY4MjI1MjYyMQ&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max')",
+    "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGZyZXNoJTIwb3JnYW5pYyUyMHByb2R1Y3RzfGVufDB8fHx8MTcxNzc2MzY5M3ww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max')",
   'design-image-large':
-    "url('https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE1OHx8d2FsbHBhcGVyfGVufDB8fHx8MTY4MjI1MjYyMQ&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max')",
+    "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGZyZXNoJTIwb3JnYW5pYyUyMHByb2R1Y3RzfGVufDB8fHx8MTcxNzc2MzY5M3ww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max')",
 }
 
 const pg_background_urls = {
   'design-image':
-    'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE1OHx8d2FsbHBhcGVyfGVufDB8fHx8MTY4MjI1MjYyMQ&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max',
+    'https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGZyZXNoJTIwb3JnYW5pYyUyMHByb2R1Y3RzfGVufDB8fHx8MTcxNzc2MzY5M3ww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max',
   'design-image-large':
-    'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE1OHx8d2FsbHBhcGVyfGVufDB8fHx8MTY4MjI1MjYyMQ&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max',
+    'https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGZyZXNoJTIwb3JnYW5pYyUyMHByb2R1Y3RzfGVufDB8fHx8MTcxNzc2MzY5M3ww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max',
 }
 
 module.exports = {
