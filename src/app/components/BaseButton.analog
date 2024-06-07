@@ -6,6 +6,7 @@ import { classNames } from '@/utils'
 import { colors } from '@/utils/colors'
 import appConfig from '@/app/ui'
 import { input, computed } from '@angular/core';
+import { NgComponentOutlet } from '@angular/common' with { analog: 'imports' };
 
 const type = input<string>('a')
 const block = input(false)
@@ -180,8 +181,9 @@ const trailingIconClass = computed(() => {
 <template><!-- <component :is="buttonIs" :class="buttonClass" :aria-label="ariaLabel" v-bind="buttonProps"> -->
 <!-- <button [class]="buttonClass()" [aria-label]="ariaLabel" [href]="buttonProps().href" [target]="buttonProps().target"
   [disabled]="buttonProps().disabled" [type]="buttonProps().type"> -->
-<a [class]="buttonClass()" [aria-label]="ariaLabel" [href]="buttonProps().href" [target]="buttonProps().target"
-  [disabled]="buttonProps().disabled" [type]="buttonProps().type">
+
+<span [is]="buttonIs()" [class]="buttonClass()" [aria-label]="ariaLabel" [href]="buttonProps().href"
+  [target]="buttonProps().target" [disabled]="buttonProps().disabled" [type]="buttonProps().type">
   <!-- <slot name="leading"></slot> -->
 
   @if (isLeading() && leadingIconName()) {
@@ -204,7 +206,7 @@ const trailingIconClass = computed(() => {
 
   <!-- <slot name="trailing">
     </slot> -->
-  </a>
+  </span>
 </template>
 
 <style></style>
