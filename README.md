@@ -25,14 +25,14 @@ Clean code 😃, No lock-in - You are in control of your projects and developmen
 
 ### 1. Clone to local
 
-[Create a repo from this template on GitHub](https://github.com/pinegrow/natures-delight-analog-tailwindcss/generate).
+[Create a repo from this template on GitHub](https://github.com/techakayy/natures-delight-analog-tailwindcss/generate).
 
 (or)
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx giget@latest gh:pinegrow/natures-delight-analog-tailwindcss my-natures-delight-analog-tailwindcss #project-name
+npx giget@latest gh:techakayy/natures-delight-analog-tailwindcss my-natures-delight-analog-tailwindcss #project-name
 cd my-natures-delight-analog-tailwindcss
 npm install #or use pnpm
 ```
@@ -81,7 +81,7 @@ npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to r
 ### Deploy to Netlify
 
 You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/natures-delight-analog-tailwindcss)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/techakayy/natures-delight-analog-tailwindcss)
 
 Check out the [deployment documentation](https://analogjs.org/docs/features/deployment/overview) for more information.
 

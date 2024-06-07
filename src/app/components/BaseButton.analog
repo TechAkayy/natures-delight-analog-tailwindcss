@@ -7,7 +7,7 @@ import { colors } from '@/utils/colors'
 import appConfig from '@/app/ui'
 import { input, computed } from '@angular/core';
 
-const type = input<string>('button')
+const type = input<string>('a')
 const block = input(false)
 const label = input<string>('My Button')
 const loading = input(false)
@@ -180,22 +180,31 @@ const trailingIconClass = computed(() => {
 <template><!-- <component :is="buttonIs" :class="buttonClass" :aria-label="ariaLabel" v-bind="buttonProps"> -->
 <!-- <button [class]="buttonClass()" [aria-label]="ariaLabel" [href]="buttonProps().href" [target]="buttonProps().target"
   [disabled]="buttonProps().disabled" [type]="buttonProps().type"> -->
-<button [class]="buttonClass()" [aria-label]="ariaLabel" [href]="buttonProps().href" [target]="buttonProps().target"
+<a [class]="buttonClass()" [aria-label]="ariaLabel" [href]="buttonProps().href" [target]="buttonProps().target"
   [disabled]="buttonProps().disabled" [type]="buttonProps().type">
-
   <!-- <slot name="leading"></slot> -->
-  <BaseIcon [ng-if]="isLeading() && leadingIconName()" [name]="leadingIconName()" [class]="leadingIconClass()"
-    aria-hidden="true" height="24px" />
+
+  @if (isLeading() && leadingIconName()) {
+  <BaseIcon [name]="leadingIconName()" [class]="leadingIconClass()" aria-hidden="true" height="24px" />
+  }
+
   <!-- <slot> -->
-  <span [ng-if]="label()" [class]="[truncate ? 'text-left break-all line-clamp-1' : '']">
+
+  @if (label()) {
+  <span [class]="[truncate ? 'text-left break-all line-clamp-1' : '']">
     {{ label() }}
   </span>
+  }
+
   <!-- </slot> -->
-  <BaseIcon [ng-if]="isTrailing() && trailingIconName()" [name]="trailingIconName()" [class]="trailingIconClass()"
-    aria-hidden="true" height="24px" />
+
+  @if (isTrailing() && trailingIconName()) {
+  <BaseIcon [name]="trailingIconName()" [class]="trailingIconClass()" aria-hidden="true" height="24px" />
+  }
+
   <!-- <slot name="trailing">
     </slot> -->
-  </button>
+  </a>
 </template>
 
 <style></style>

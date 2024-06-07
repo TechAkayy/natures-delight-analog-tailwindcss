@@ -20,14 +20,11 @@ import BaseButton from '@/app/components/BaseButton.analog' with { analog: 'impo
             <div class="flex items-center overflow-hidden p-2 rounded-full">
               <label for="emailfield" class="sr-only">Email address:</label>
               <input id="emailfield" class="border-0 flex-1 outline-none px-5 py-2 rounded-full w-full"
-                placeholder="email@example.com" type="email" required name="fields[email]" />
-              <BaseButton type="submit" class="ml-2" size="md" color="secondary" label="Sign Up">
-
-              </BaseButton>
+                placeholder="email@example.com" type="email" required name="fields[email]">
+              <BaseButton type="submit" class="ml-2" size="md" color="secondary" label="Sign Up" />
             </div>
           </form>
-        </div>
-      </div>
+        </div>       </div>
       </div>
     </div>
   </div>

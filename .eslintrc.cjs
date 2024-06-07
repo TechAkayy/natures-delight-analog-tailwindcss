@@ -8,5 +8,6 @@ module.exports = {
     'no-unused-vars': 'off',
     'vue/comment-directive': 'off',
     'vue/valid-attribute-name': 'off',
+    'vue/attribute-hyphenation': 'off',
   },
 }

@@ -81,7 +81,7 @@ export default {
     },
   },
   default: {
-    size: 'sm',
+    size: 'xl',
     variant: 'solid',
     color: 'primary',
     loadingIcon: 'i-heroicons-arrow-path-20-solid',

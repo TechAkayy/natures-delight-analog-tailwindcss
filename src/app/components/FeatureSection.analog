@@ -1,8 +1,59 @@
 <script lang="ts">
-import products from '../../data/products.json'
+// import products from '../../data/products.json'
 import BaseButton from '@/app/components/BaseButton.analog' with { analog: 'imports' };
-// import ProductCard from '@/app/components/ProductCard.analog' with { analog: 'imports' };
+import ProductCard from '@/app/components/ProductCard.analog' with { analog: 'imports' };
 
+
+const products = [
+  {
+    id: 1,
+    title: "Tangerine Orange",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDk3fHxmcnVpdHxlbnwwfHx8fDE2MjkyMTY1NTM&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  },
+  {
+    id: 2,
+    title: "Fuji Apple",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1569870499705-504209102861?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE3NXx8ZnJ1aXR8ZW58MHx8fHwxNjI5MjE2Njcx&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  },
+  {
+    id: 3,
+    title: "Queen Pineapple",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1550828520-4cb496926fc9?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDR8fHBpbmVhcHBsZXxlbnwwfHx8fDE2MjkyMTcxMzY&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  },
+  {
+    id: 4,
+    title: "Red Silk Pomegranate",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1541344999736-83eca272f6fc?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDMzOXx8ZnJ1aXR8ZW58MHx8fHwxNjI5MjE2NzYz&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  },
+  {
+    id: 5,
+    title: "Hass Avacado",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1583029901628-8039767c7ad0?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDh8fGF2b2NhZG98ZW58MHx8fHwxNjI5MjE3NzI3&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  },
+  {
+    id: 6,
+    title: "Cavendish Banana",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEzfHxiYW5hbmF8ZW58MHx8fHwxNjI5MjIwOTQz&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  },
+  {
+    id: 7,
+    title: "Albion Strawberry",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1543158181-e6f9f6712055?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDQyfHxzdHJhd2JlcnJ5fGVufDB8fHx8MTYyOTIxNzM3Ng&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  },
+  {
+    id: 8,
+    title: "Klondike Melon",
+    pricePerKg: "2.5",
+    imageUrl: "https://images.unsplash.com/photo-1621961048737-a9993789e1ad?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDI5fHxtZWxvbnxlbnwwfHx8fDE2MjkyMjE2Mjc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=400&fit=crop"
+  }
+]
 
 </script>
 
@@ -11,14 +62,15 @@ import BaseButton from '@/app/components/BaseButton.analog' with { analog: 'impo
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="text-white dark:text-neutral-950"
     fill="currentColor">
     <path data-name="Path 7040"
-      d="M1440 256l-80-10.7c-80-10.3-240-32.3-400-74.6C800 128 640 64 480 69.3 320 75 160 149 80 186.7L0 224V0h1440z">
-    </path>
+      d="M1440 256l-80-10.7c-80-10.3-240-32.3-400-74.6C800 128 640 64 480 69.3 320 75 160 149 80 186.7L0 224V0h1440z" />
   </svg>
   <div class="py-12">
     <div class="container mx-auto px-4 relative">
       <div class="flex flex-wrap -mx-4 items-center mb-4">
         <div class="px-4 w-full lg:w-7/12">
-          <h6 class="text-primary-100 dark:text-primary-700">Our Products</h6>
+          <h6 class="text-primary-100 dark:text-primary-700">
+            Our Products
+          </h6>
           <h3>Our Featured Menu</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -26,13 +78,14 @@ import BaseButton from '@/app/components/BaseButton.analog' with { analog: 'impo
           </p>
         </div>
         <div class="px-4 w-full lg:text-right lg:w-5/12">
-          <BaseButton label="Go to Shop"> </BaseButton>
+          <BaseButton label="Go to Shop" />
         </div>
       </div>
       <div class="flex flex-wrap -mx-4 justify-center">
-        <!-- <ProductCard ng-repeat="(product, index) in products" [id]="product.id" [title]="product.title"
-          [imageUrl]="product.imageUrl" [pricePerKg]="product.pricePerKg">
-        </ProductCard> -->   </div>
+        @for (product of products; track product.id) {
+        <ProductCard [id]="product.id" [title]="product.title" [imageUrl]="product.imageUrl"
+          [pricePerKg]="product.pricePerKg" class="p-4 w-full sm:w-6/12 lg:w-4/12 xl:w-3/12" />}
+        </div>
       </div>
     </div>
   </section>

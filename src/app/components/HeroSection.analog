@@ -18,7 +18,7 @@ import BaseIcon from '@/app/components/BaseIcon.analog' with { analog: 'imports'
             pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.
           </p>
           <BaseButton size="xl" label="Buy Now" target="_blank"
-            to="https://github.com/pinegrow/natures-delight-analog-tailwindcss" />
+            to="https://github.com/techakayy/natures-delight-analog-tailwindcss" />
         </div>
       </div>
     </div>
