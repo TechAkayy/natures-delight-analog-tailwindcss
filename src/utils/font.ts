@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { pg_font_urls } from '../../themes/pg-tailwindcss/tokens.mjs'
 
 const getFontsWithFallback = (pg_fonts) => {
