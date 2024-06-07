@@ -1,0 +1,17 @@
+{
+  "[analog]": {
+    "editor.defaultFormatter": "AnalogJS.vscode-analog"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "analog"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "search.exclude": {
+    "**/_pgbackup": true,
+    "dist": true,
+    ".unlighthouse": true
+  }
+}

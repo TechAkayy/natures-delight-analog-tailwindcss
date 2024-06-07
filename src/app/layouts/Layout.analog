@@ -1,0 +1,22 @@
+<script lang="ts">
+//import NavBar from '@/app/components/NavBar.analog' with { analog: 'imports' };
+// import HeadAndMeta from '@/app/components/HeadAndMeta.analog' with { analog: 'imports' };
+import TheFooter from '@/app/components/TheFooter.analog' with { analog: 'imports' };
+import { RouterOutlet } from '@angular/router' with { analog: 'imports' };
+
+</script>
+
+<template>
+<div>
+  <!-- <HeadAndMeta /> -->
+  <div class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50">
+    <!-- <NavBar class="fixed bg-white dark:bg-neutral-950 shadow z-20" /> -->
+    <main class="shadow">
+      <!-- <slot /> -->
+      <router-outlet></router-outlet>
+    </main>
+    <TheFooter />
+    </div>
+  </div>
+</template>
+<style></style>

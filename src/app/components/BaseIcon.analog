@@ -1,0 +1,33 @@
+<script lang="ts">
+
+import { input, computed } from '@angular/core'
+
+const name = input<string>('i-line-md-iconify1')
+const tag = input<string>('span')
+const width = input<string>('')
+const height = input<string>('')
+
+const addUnit = (val: any) => {
+  if (val && !(val.endsWith('px') || val.endsWith('em'))) {
+    return `${val}px`
+  } else {
+    return val
+  }
+}
+
+const iconStyle = computed(() => {
+  const _width = addUnit(width()) || addUnit(height()) || '20px'
+  const _height = addUnit(height()) || width
+  const display = 'inline-block'
+  return {
+    width: _width,
+    height: _height,
+    display,
+  }
+})
+</script>
+
+<template><!-- <component :is="tag" :class="name" :style="iconStyle"> </component> -->
+<span [class]="name()" [style]="iconStyle()"> </span></template>
+
+<style></style>

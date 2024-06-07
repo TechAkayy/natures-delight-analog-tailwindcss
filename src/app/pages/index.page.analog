@@ -1,0 +1,23 @@
+<script lang="ts">
+import HeroSection from '@/app/components/HeroSection.analog' with { analog: 'imports' };
+import StatsSection from '@/app/components/StatsSection.analog' with { analog: 'imports' };
+import FeatureSection from '@/app/components/FeatureSection.analog' with { analog: 'imports' };
+import TestimonialSection from '@/app/components/TestimonialSection.analog' with { analog: 'imports' };
+import SubscribeSection from '@/app/components/SubscribeSection.analog' with { analog: 'imports' };
+import { RouteMeta } from '@analogjs/router';
+
+export const routeMeta: RouteMeta = {
+  title: `Nature's Delight`,
+};
+
+</script>
+
+<template>
+<div>
+  <HeroSection />
+  <StatsSection />
+  <FeatureSection />
+  <TestimonialSection />
+  <SubscribeSection />
+  </div>
+</template>
